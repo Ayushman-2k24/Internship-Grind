@@ -1,31 +1,18 @@
-#include <iostream>
-#include <algorithm>
-#include <limits.h>
+#include<iostream>
 using namespace std;
-bool check_sort(int arr[], int size)
-{
-    for (int i = 1; i < size; i++)
-    {
-        if (arr[i] > arr[i - 1])
-        {
-        }
-        else
-        {
-            return false;
+int main(){
+    int arr[]={2,6,0,6,0,0,5,0};
+    int size=sizeof(arr)/sizeof(arr[0]);
+    int j=0;
+    for(int i=0;i<size;i++){
+        if(arr[i]!=0){
+            swap(arr[i],arr[j]);
+            j++;
         }
     }
-    return true;
-}
-int main()
-{
-    int arr[] = {1, 2, 3, 4, 5};
-    int size = sizeof(arr) / sizeof(arr[0]);
-    if (check_sort(arr, size))
+    for (int i = 0; i < size; i++)
     {
-        cout << "its sorted";
+        cout<<arr[i]<<" ";
     }
-    else
-    {
-        cout << "its not";
-    }
+    
 }

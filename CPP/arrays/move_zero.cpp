@@ -13,7 +13,7 @@ void shift(int arr[],int n){
     
 }
 int main(){
-    int arr[]={1,0,3,0,6};
+    int arr[]={1,0,3,0,0,9};
     int size=sizeof(arr)/sizeof(arr[0]);
     shift(arr,size);
 
