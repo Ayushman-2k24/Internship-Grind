@@ -1,18 +1,28 @@
 #include<iostream>
+#include<vector>
+#include<limits.h>
+#include<algorithm>
+#include<set>
+#include<map>
 using namespace std;
+int check(vector<int>arr,int n){
+    return 1;
+    
+}
 int main(){
-    int arr[]={2,6,0,6,0,0,5,0};
-    int size=sizeof(arr)/sizeof(arr[0]);
-    int j=0;
-    for(int i=0;i<size;i++){
-        if(arr[i]!=0){
-            swap(arr[i],arr[j]);
-            j++;
-        }
-    }
-    for (int i = 0; i < size; i++)
+    vector<int>arr={1,2,3,5};
+    int n=5;
+    int nsum=n*(n+1)/2;
+    int sum=0;
+    for (int i = 0; i < n-1; i++)
     {
-        cout<<arr[i]<<" ";
+        sum=sum+arr[i];
     }
+    cout<<nsum-sum;
+    // for (int j = 0; j < i; j++)
+    // {
+    //     cout<<arr[j]<<" ";
+    // }
+    
     
 }
