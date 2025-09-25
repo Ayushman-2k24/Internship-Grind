@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 int main(){
-    vector<int>arr={1,5,7,3,5,};
+    vector<int>arr={1,5,7,3,5};
     int n=sizeof(arr)/sizeof(arr[0]);
     int start=0;
     int end=n-1;
