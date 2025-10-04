@@ -21,7 +21,7 @@ int binary(int arr[],int n,int target){
 int main(){
     int arr[]={1,2,3,4,5,6};
     int size=6;
-    int search=1;
+    int search=5;
     int ans=binary(arr,size,search);
     cout<<ans<<endl;
 
